@@ -1,0 +1,3088 @@
+{
+  "chunks": [
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "{",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "cities",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\":",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " [",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " {",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "city",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\":",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "Paris",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\",",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "condition",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\":",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "Part",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "ly",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " cloudy",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\",",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "temperature",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "_c",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\":",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " ",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "1",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "5",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " },",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " {",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "city",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\":",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "London",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\",",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "condition",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\":",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "Light",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " rain",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\",",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "temperature",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "_c",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\":",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " ",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "1",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "2",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " },",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " {",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "city",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\":",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "New",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " York",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\",",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "condition",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\":",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "S",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "unny",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\",",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "temperature",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "_c",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\":",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " ",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "1",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "8",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " },",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " {",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "city",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\":",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "Tok",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "yo",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\",",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "condition",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\":",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "Clear",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\",",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "temperature",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "_c",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\":",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " ",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "2",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "2",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " },",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " {",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "city",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\":",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "Sy",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "dney",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\",",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "condition",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\":",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "Cloud",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "y",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\",",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " \"",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "temperature",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "_c",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "\":",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " ",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "2",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "0",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " }",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " ]",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": " }",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": "stop"
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118285-q1tnlYxzlIizUE89obHJ",
+      "choices": [
+        {
+          "delta": {
+            "content": "",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118285,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": null,
+      "usage": {
+        "completion_tokens": 121,
+        "prompt_tokens": 39,
+        "total_tokens": 160,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 3
+        }
+      },
+      "provider": "Novita"
+    }
+  ]
+}

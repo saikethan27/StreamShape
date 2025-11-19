@@ -1,0 +1,7 @@
+PRD.MD
+.env
+__pycache__/
+.hypothesis/
+.kiro/
+.pytest_cache/
+dummy/

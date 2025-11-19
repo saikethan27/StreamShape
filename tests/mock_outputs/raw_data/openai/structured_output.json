@@ -1,0 +1,37 @@
+{
+  "id": "gen-1763118282-DkTtue6n0znZ30j3gTxW",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{  \n  \"cities\": [  \n    {  \n      \"city\": \"Tokyo\",  \n      \"condition\": \"Partly Cloudy\",  \n      \"temperature_c\": 22  \n    },  \n    {  \n      \"city\": \"New York\",  \n      \"condition\": \"Sunny\",  \n      \"temperature_c\": 20  \n    },  \n    {  \n      \"city\": \"London\",  \n      \"condition\": \"Light Rain\",  \n      \"temperature_c\": 15  \n    },  \n    {  \n      \"city\": \"Sydney\",  \n      \"condition\": \"Clear\",  \n      \"temperature_c\": 18  \n    },  \n    {  \n      \"city\": \"Delhi\",  \n      \"condition\": \"Hazy\",  \n      \"temperature_c\": 28  \n    }  \n  ]  \n}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null,
+        "reasoning": null
+      },
+      "native_finish_reason": "stop"
+    }
+  ],
+  "created": 1763118282,
+  "model": "kwaipilot/kat-coder-pro:free",
+  "object": "chat.completion",
+  "service_tier": null,
+  "system_fingerprint": "",
+  "usage": {
+    "completion_tokens": 178,
+    "prompt_tokens": 40,
+    "total_tokens": 218,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 3
+    }
+  },
+  "provider": "Novita"
+}

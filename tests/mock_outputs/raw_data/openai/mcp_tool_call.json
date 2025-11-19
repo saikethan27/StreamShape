@@ -1,0 +1,47 @@
+{
+  "id": "gen-1763118292-nA6M76O81Gk9j6QKbGHH",
+  "choices": [
+    {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "I'll list the files in the current directory for you.\n\n",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [
+          {
+            "id": "call_b1b870b6a6964739856feb5c",
+            "function": {
+              "arguments": "{\"path\": \".\"}",
+              "name": "list_directory"
+            },
+            "type": "function",
+            "index": 0
+          }
+        ],
+        "reasoning": null
+      },
+      "native_finish_reason": "tool_calls"
+    }
+  ],
+  "created": 1763118292,
+  "model": "kwaipilot/kat-coder-pro:free",
+  "object": "chat.completion",
+  "service_tier": null,
+  "system_fingerprint": "",
+  "usage": {
+    "completion_tokens": 32,
+    "prompt_tokens": 377,
+    "total_tokens": 409,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 39
+    }
+  },
+  "provider": "Novita"
+}

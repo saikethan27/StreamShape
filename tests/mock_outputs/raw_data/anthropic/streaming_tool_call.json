@@ -1,0 +1,286 @@
+{
+  "events": [
+    {
+      "message": {
+        "id": "0566406cf4bc101d2f7602157b9ba79f",
+        "content": [],
+        "model": "MiniMax-M2",
+        "role": "assistant",
+        "stop_reason": null,
+        "stop_sequence": null,
+        "type": "message",
+        "usage": {
+          "cache_creation": null,
+          "cache_creation_input_tokens": null,
+          "cache_read_input_tokens": null,
+          "input_tokens": 205,
+          "output_tokens": 0,
+          "server_tool_use": null,
+          "service_tier": null
+        },
+        "service_tier": "standard"
+      },
+      "type": "message_start"
+    },
+    {
+      "content_block": {
+        "signature": null,
+        "thinking": "",
+        "type": "thinking"
+      },
+      "index": 0,
+      "type": "content_block_start"
+    },
+    {
+      "delta": {
+        "thinking": "Okay,",
+        "type": "thinking_delta"
+      },
+      "index": 0,
+      "type": "content_block_delta"
+    },
+    {
+      "type": "thinking",
+      "thinking": "Okay,",
+      "snapshot": "Okay,"
+    },
+    {
+      "delta": {
+        "thinking": " let's analyze what the user is asking for. They want me to \"stream\" weather information for Rome. This seems like a request to get current",
+        "type": "thinking_delta"
+      },
+      "index": 0,
+      "type": "content_block_delta"
+    },
+    {
+      "type": "thinking",
+      "thinking": " let's analyze what the user is asking for. They want me to \"stream\" weather information for Rome. This seems like a request to get current",
+      "snapshot": "Okay, let's analyze what the user is asking for. They want me to \"stream\" weather information for Rome. This seems like a request to get current"
+    },
+    {
+      "delta": {
+        "thinking": " weather data for Rome, Italy.\n\nLooking at the tools available to me, I see I have access to a `get_weather` function that takes a city name as a parameter. This is",
+        "type": "thinking_delta"
+      },
+      "index": 0,
+      "type": "content_block_delta"
+    },
+    {
+      "type": "thinking",
+      "thinking": " weather data for Rome, Italy.\n\nLooking at the tools available to me, I see I have access to a `get_weather` function that takes a city name as a parameter. This is",
+      "snapshot": "Okay, let's analyze what the user is asking for. They want me to \"stream\" weather information for Rome. This seems like a request to get current weather data for Rome, Italy.\n\nLooking at the tools available to me, I see I have access to a `get_weather` function that takes a city name as a parameter. This is"
+    },
+    {
+      "delta": {
+        "thinking": " perfect for this request since I need to retrieve weather information for Rome.\n\nThe user's phrasing \"stream the weather request\"",
+        "type": "thinking_delta"
+      },
+      "index": 0,
+      "type": "content_block_delta"
+    },
+    {
+      "type": "thinking",
+      "thinking": " perfect for this request since I need to retrieve weather information for Rome.\n\nThe user's phrasing \"stream the weather request\"",
+      "snapshot": "Okay, let's analyze what the user is asking for. They want me to \"stream\" weather information for Rome. This seems like a request to get current weather data for Rome, Italy.\n\nLooking at the tools available to me, I see I have access to a `get_weather` function that takes a city name as a parameter. This is perfect for this request since I need to retrieve weather information for Rome.\n\nThe user's phrasing \"stream the weather request\""
+    },
+    {
+      "delta": {
+        "thinking": " is a bit unusual - they might mean they want me to make the actual API call to get the weather data, or perhaps they're thinking of some kind of real",
+        "type": "thinking_delta"
+      },
+      "index": 0,
+      "type": "content_block_delta"
+    },
+    {
+      "type": "thinking",
+      "thinking": " is a bit unusual - they might mean they want me to make the actual API call to get the weather data, or perhaps they're thinking of some kind of real",
+      "snapshot": "Okay, let's analyze what the user is asking for. They want me to \"stream\" weather information for Rome. This seems like a request to get current weather data for Rome, Italy.\n\nLooking at the tools available to me, I see I have access to a `get_weather` function that takes a city name as a parameter. This is perfect for this request since I need to retrieve weather information for Rome.\n\nThe user's phrasing \"stream the weather request\" is a bit unusual - they might mean they want me to make the actual API call to get the weather data, or perhaps they're thinking of some kind of real"
+    },
+    {
+      "delta": {
+        "thinking": "-time weather display. However, based on my available tools, I should simply use the `get_weather` function with \"Rome\" as the",
+        "type": "thinking_delta"
+      },
+      "index": 0,
+      "type": "content_block_delta"
+    },
+    {
+      "type": "thinking",
+      "thinking": "-time weather display. However, based on my available tools, I should simply use the `get_weather` function with \"Rome\" as the",
+      "snapshot": "Okay, let's analyze what the user is asking for. They want me to \"stream\" weather information for Rome. This seems like a request to get current weather data for Rome, Italy.\n\nLooking at the tools available to me, I see I have access to a `get_weather` function that takes a city name as a parameter. This is perfect for this request since I need to retrieve weather information for Rome.\n\nThe user's phrasing \"stream the weather request\" is a bit unusual - they might mean they want me to make the actual API call to get the weather data, or perhaps they're thinking of some kind of real-time weather display. However, based on my available tools, I should simply use the `get_weather` function with \"Rome\" as the"
+    },
+    {
+      "delta": {
+        "thinking": " parameter.\n\nThe `get_weather` tool requires a \"city\" parameter, which should be a string. In this case, I'll set it to \"Rome\" to get weather information for",
+        "type": "thinking_delta"
+      },
+      "index": 0,
+      "type": "content_block_delta"
+    },
+    {
+      "type": "thinking",
+      "thinking": " parameter.\n\nThe `get_weather` tool requires a \"city\" parameter, which should be a string. In this case, I'll set it to \"Rome\" to get weather information for",
+      "snapshot": "Okay, let's analyze what the user is asking for. They want me to \"stream\" weather information for Rome. This seems like a request to get current weather data for Rome, Italy.\n\nLooking at the tools available to me, I see I have access to a `get_weather` function that takes a city name as a parameter. This is perfect for this request since I need to retrieve weather information for Rome.\n\nThe user's phrasing \"stream the weather request\" is a bit unusual - they might mean they want me to make the actual API call to get the weather data, or perhaps they're thinking of some kind of real-time weather display. However, based on my available tools, I should simply use the `get_weather` function with \"Rome\" as the parameter.\n\nThe `get_weather` tool requires a \"city\" parameter, which should be a string. In this case, I'll set it to \"Rome\" to get weather information for"
+    },
+    {
+      "delta": {
+        "thinking": " Rome, Italy. The tool will likely return current weather data including temperature, humidity, conditions, and possibly forecasts.\n\nI don't need any additional parameters since",
+        "type": "thinking_delta"
+      },
+      "index": 0,
+      "type": "content_block_delta"
+    },
+    {
+      "type": "thinking",
+      "thinking": " Rome, Italy. The tool will likely return current weather data including temperature, humidity, conditions, and possibly forecasts.\n\nI don't need any additional parameters since",
+      "snapshot": "Okay, let's analyze what the user is asking for. They want me to \"stream\" weather information for Rome. This seems like a request to get current weather data for Rome, Italy.\n\nLooking at the tools available to me, I see I have access to a `get_weather` function that takes a city name as a parameter. This is perfect for this request since I need to retrieve weather information for Rome.\n\nThe user's phrasing \"stream the weather request\" is a bit unusual - they might mean they want me to make the actual API call to get the weather data, or perhaps they're thinking of some kind of real-time weather display. However, based on my available tools, I should simply use the `get_weather` function with \"Rome\" as the parameter.\n\nThe `get_weather` tool requires a \"city\" parameter, which should be a string. In this case, I'll set it to \"Rome\" to get weather information for Rome, Italy. The tool will likely return current weather data including temperature, humidity, conditions, and possibly forecasts.\n\nI don't need any additional parameters since"
+    },
+    {
+      "delta": {
+        "thinking": " \"Rome\" is unambiguous - there's only one major city called Rome, and it's widely recognized. I don't need to specify the",
+        "type": "thinking_delta"
+      },
+      "index": 0,
+      "type": "content_block_delta"
+    },
+    {
+      "type": "thinking",
+      "thinking": " \"Rome\" is unambiguous - there's only one major city called Rome, and it's widely recognized. I don't need to specify the",
+      "snapshot": "Okay, let's analyze what the user is asking for. They want me to \"stream\" weather information for Rome. This seems like a request to get current weather data for Rome, Italy.\n\nLooking at the tools available to me, I see I have access to a `get_weather` function that takes a city name as a parameter. This is perfect for this request since I need to retrieve weather information for Rome.\n\nThe user's phrasing \"stream the weather request\" is a bit unusual - they might mean they want me to make the actual API call to get the weather data, or perhaps they're thinking of some kind of real-time weather display. However, based on my available tools, I should simply use the `get_weather` function with \"Rome\" as the parameter.\n\nThe `get_weather` tool requires a \"city\" parameter, which should be a string. In this case, I'll set it to \"Rome\" to get weather information for Rome, Italy. The tool will likely return current weather data including temperature, humidity, conditions, and possibly forecasts.\n\nI don't need any additional parameters since \"Rome\" is unambiguous - there's only one major city called Rome, and it's widely recognized. I don't need to specify the"
+    },
+    {
+      "delta": {
+        "thinking": " country since Rome is the capital of Italy and is globally known by just its name.\n\nSo I'll",
+        "type": "thinking_delta"
+      },
+      "index": 0,
+      "type": "content_block_delta"
+    },
+    {
+      "type": "thinking",
+      "thinking": " country since Rome is the capital of Italy and is globally known by just its name.\n\nSo I'll",
+      "snapshot": "Okay, let's analyze what the user is asking for. They want me to \"stream\" weather information for Rome. This seems like a request to get current weather data for Rome, Italy.\n\nLooking at the tools available to me, I see I have access to a `get_weather` function that takes a city name as a parameter. This is perfect for this request since I need to retrieve weather information for Rome.\n\nThe user's phrasing \"stream the weather request\" is a bit unusual - they might mean they want me to make the actual API call to get the weather data, or perhaps they're thinking of some kind of real-time weather display. However, based on my available tools, I should simply use the `get_weather` function with \"Rome\" as the parameter.\n\nThe `get_weather` tool requires a \"city\" parameter, which should be a string. In this case, I'll set it to \"Rome\" to get weather information for Rome, Italy. The tool will likely return current weather data including temperature, humidity, conditions, and possibly forecasts.\n\nI don't need any additional parameters since \"Rome\" is unambiguous - there's only one major city called Rome, and it's widely recognized. I don't need to specify the country since Rome is the capital of Italy and is globally known by just its name.\n\nSo I'll"
+    },
+    {
+      "delta": {
+        "thinking": " make the tool call to `get_weather` with the city parameter set to \"Rome\". This should retrieve the current weather information that the user is looking for.",
+        "type": "thinking_delta"
+      },
+      "index": 0,
+      "type": "content_block_delta"
+    },
+    {
+      "type": "thinking",
+      "thinking": " make the tool call to `get_weather` with the city parameter set to \"Rome\". This should retrieve the current weather information that the user is looking for.",
+      "snapshot": "Okay, let's analyze what the user is asking for. They want me to \"stream\" weather information for Rome. This seems like a request to get current weather data for Rome, Italy.\n\nLooking at the tools available to me, I see I have access to a `get_weather` function that takes a city name as a parameter. This is perfect for this request since I need to retrieve weather information for Rome.\n\nThe user's phrasing \"stream the weather request\" is a bit unusual - they might mean they want me to make the actual API call to get the weather data, or perhaps they're thinking of some kind of real-time weather display. However, based on my available tools, I should simply use the `get_weather` function with \"Rome\" as the parameter.\n\nThe `get_weather` tool requires a \"city\" parameter, which should be a string. In this case, I'll set it to \"Rome\" to get weather information for Rome, Italy. The tool will likely return current weather data including temperature, humidity, conditions, and possibly forecasts.\n\nI don't need any additional parameters since \"Rome\" is unambiguous - there's only one major city called Rome, and it's widely recognized. I don't need to specify the country since Rome is the capital of Italy and is globally known by just its name.\n\nSo I'll make the tool call to `get_weather` with the city parameter set to \"Rome\". This should retrieve the current weather information that the user is looking for."
+    },
+    {
+      "delta": {
+        "signature": "c37fad81519f3d7f58094be9bf7bbede3e948a741758e7659f99c935add9ba21",
+        "type": "signature_delta"
+      },
+      "index": 0,
+      "type": "content_block_delta"
+    },
+    {
+      "type": "signature",
+      "signature": "c37fad81519f3d7f58094be9bf7bbede3e948a741758e7659f99c935add9ba21"
+    },
+    {
+      "index": 0,
+      "type": "content_block_stop",
+      "content_block": {
+        "signature": "c37fad81519f3d7f58094be9bf7bbede3e948a741758e7659f99c935add9ba21",
+        "thinking": "Okay, let's analyze what the user is asking for. They want me to \"stream\" weather information for Rome. This seems like a request to get current weather data for Rome, Italy.\n\nLooking at the tools available to me, I see I have access to a `get_weather` function that takes a city name as a parameter. This is perfect for this request since I need to retrieve weather information for Rome.\n\nThe user's phrasing \"stream the weather request\" is a bit unusual - they might mean they want me to make the actual API call to get the weather data, or perhaps they're thinking of some kind of real-time weather display. However, based on my available tools, I should simply use the `get_weather` function with \"Rome\" as the parameter.\n\nThe `get_weather` tool requires a \"city\" parameter, which should be a string. In this case, I'll set it to \"Rome\" to get weather information for Rome, Italy. The tool will likely return current weather data including temperature, humidity, conditions, and possibly forecasts.\n\nI don't need any additional parameters since \"Rome\" is unambiguous - there's only one major city called Rome, and it's widely recognized. I don't need to specify the country since Rome is the capital of Italy and is globally known by just its name.\n\nSo I'll make the tool call to `get_weather` with the city parameter set to \"Rome\". This should retrieve the current weather information that the user is looking for.",
+        "type": "thinking"
+      }
+    },
+    {
+      "content_block": {
+        "id": "call_function_z2ts8tdmrpp6_1",
+        "input": {},
+        "name": "get_weather",
+        "type": "tool_use"
+      },
+      "index": 1,
+      "type": "content_block_start"
+    },
+    {
+      "delta": {
+        "partial_json": "{\"city\":\"Rome\"}",
+        "type": "input_json_delta"
+      },
+      "index": 1,
+      "type": "content_block_delta"
+    },
+    {
+      "type": "input_json",
+      "partial_json": "{\"city\":\"Rome\"}",
+      "snapshot": {
+        "city": "Rome"
+      }
+    },
+    {
+      "index": 1,
+      "type": "content_block_stop",
+      "content_block": {
+        "id": "call_function_z2ts8tdmrpp6_1",
+        "input": {
+          "city": "Rome"
+        },
+        "name": "get_weather",
+        "type": "tool_use"
+      }
+    },
+    {
+      "delta": {
+        "stop_reason": "tool_use",
+        "stop_sequence": null
+      },
+      "type": "message_delta",
+      "usage": {
+        "cache_creation_input_tokens": null,
+        "cache_read_input_tokens": null,
+        "input_tokens": 205,
+        "output_tokens": 325,
+        "server_tool_use": null
+      }
+    },
+    {
+      "type": "message_stop",
+      "message": {
+        "id": "0566406cf4bc101d2f7602157b9ba79f",
+        "content": [
+          {
+            "signature": "c37fad81519f3d7f58094be9bf7bbede3e948a741758e7659f99c935add9ba21",
+            "thinking": "Okay, let's analyze what the user is asking for. They want me to \"stream\" weather information for Rome. This seems like a request to get current weather data for Rome, Italy.\n\nLooking at the tools available to me, I see I have access to a `get_weather` function that takes a city name as a parameter. This is perfect for this request since I need to retrieve weather information for Rome.\n\nThe user's phrasing \"stream the weather request\" is a bit unusual - they might mean they want me to make the actual API call to get the weather data, or perhaps they're thinking of some kind of real-time weather display. However, based on my available tools, I should simply use the `get_weather` function with \"Rome\" as the parameter.\n\nThe `get_weather` tool requires a \"city\" parameter, which should be a string. In this case, I'll set it to \"Rome\" to get weather information for Rome, Italy. The tool will likely return current weather data including temperature, humidity, conditions, and possibly forecasts.\n\nI don't need any additional parameters since \"Rome\" is unambiguous - there's only one major city called Rome, and it's widely recognized. I don't need to specify the country since Rome is the capital of Italy and is globally known by just its name.\n\nSo I'll make the tool call to `get_weather` with the city parameter set to \"Rome\". This should retrieve the current weather information that the user is looking for.",
+            "type": "thinking"
+          },
+          {
+            "id": "call_function_z2ts8tdmrpp6_1",
+            "input": {
+              "city": "Rome"
+            },
+            "name": "get_weather",
+            "type": "tool_use"
+          }
+        ],
+        "model": "MiniMax-M2",
+        "role": "assistant",
+        "stop_reason": "tool_use",
+        "stop_sequence": null,
+        "type": "message",
+        "usage": {
+          "cache_creation": null,
+          "cache_creation_input_tokens": null,
+          "cache_read_input_tokens": null,
+          "input_tokens": 205,
+          "output_tokens": 325,
+          "server_tool_use": null,
+          "service_tier": null
+        },
+        "service_tier": "standard"
+      }
+    }
+  ]
+}

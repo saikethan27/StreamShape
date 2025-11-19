@@ -1,0 +1,199 @@
+{
+  "chunks": [
+    {
+      "id": "gen-1763118289-TAMYWgYFmNIxvAWztDG8",
+      "choices": [
+        {
+          "delta": {
+            "content": "",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118290,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118289-TAMYWgYFmNIxvAWztDG8",
+      "choices": [
+        {
+          "delta": {
+            "content": null,
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "index": 0,
+                "id": "call_0d695c5792b04088b47d0c80",
+                "function": {
+                  "arguments": null,
+                  "name": "get_weather"
+                },
+                "type": "function"
+              }
+            ]
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118290,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118289-TAMYWgYFmNIxvAWztDG8",
+      "choices": [
+        {
+          "delta": {
+            "content": null,
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "index": 0,
+                "id": null,
+                "function": {
+                  "arguments": "{\"city\": \"Rome\"",
+                  "name": null
+                },
+                "type": "function"
+              }
+            ]
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118290,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118289-TAMYWgYFmNIxvAWztDG8",
+      "choices": [
+        {
+          "delta": {
+            "content": null,
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "index": 0,
+                "id": null,
+                "function": {
+                  "arguments": "}",
+                  "name": null
+                },
+                "type": "function"
+              }
+            ]
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118290,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118289-TAMYWgYFmNIxvAWztDG8",
+      "choices": [
+        {
+          "delta": {
+            "content": "",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": "tool_calls",
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": "tool_calls"
+        }
+      ],
+      "created": 1763118290,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": "",
+      "usage": null,
+      "provider": "Novita"
+    },
+    {
+      "id": "gen-1763118289-TAMYWgYFmNIxvAWztDG8",
+      "choices": [
+        {
+          "delta": {
+            "content": "",
+            "function_call": null,
+            "refusal": null,
+            "role": "assistant",
+            "tool_calls": null
+          },
+          "finish_reason": null,
+          "index": 0,
+          "logprobs": null,
+          "native_finish_reason": null
+        }
+      ],
+      "created": 1763118290,
+      "model": "kwaipilot/kat-coder-pro:free",
+      "object": "chat.completion.chunk",
+      "service_tier": null,
+      "system_fingerprint": null,
+      "usage": {
+        "completion_tokens": 23,
+        "prompt_tokens": 288,
+        "total_tokens": 311,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 276
+        }
+      },
+      "provider": "Novita"
+    }
+  ],
+  "tool_calls": {
+    "0": {
+      "name": "get_weather",
+      "arguments": "{\"city\": \"Rome\"}"
+    }
+  }
+}

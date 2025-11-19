@@ -1,0 +1,221 @@
+[
+  {
+    "sdk_http_response": {
+      "headers": {
+        "content-type": "text/event-stream",
+        "content-disposition": "attachment",
+        "vary": "Origin, X-Origin, Referer",
+        "transfer-encoding": "chunked",
+        "date": "Fri, 14 Nov 2025 11:04:23 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=1160",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"cities\": [\n    {\n      \"city\": \"Paris\",\n      \"temperature_c\": 18.5,\n      \"condition\": \"Partly Cloudy\"\n    },\n    {\n      \"city\": \"London\",\n      \"temperature_c\": 15.2,\n      \"condition\": \"Light Rain\"\n    },\n    {\n      \"city\": \"New York\",\n      \"temperature_c\": 22.0,\n      \"",
+              "thought": null,
+              "thought_signature": null,
+              "video_metadata": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": null,
+        "avg_logprobs": null,
+        "grounding_metadata": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-2.5-flash-lite-preview-09-2025",
+    "prompt_feedback": null,
+    "response_id": "tgwXaf_QN865juMPh_m0oAM",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 108,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 33,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 33
+        }
+      ],
+      "thoughts_token_count": null,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 141,
+      "traffic_type": null
+    },
+    "automatic_function_calling_history": null,
+    "parsed": null
+  },
+  {
+    "sdk_http_response": {
+      "headers": {
+        "content-type": "text/event-stream",
+        "content-disposition": "attachment",
+        "vary": "Origin, X-Origin, Referer",
+        "transfer-encoding": "chunked",
+        "date": "Fri, 14 Nov 2025 11:04:23 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=1160",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "condition\": \"Sunny\"\n    },\n    {\n      \"city\": \"Tokyo\",\n      \"temperature_c\": 25.8,\n      \"condition\": \"Humid\"\n    },\n    {\n      \"city",
+              "thought": null,
+              "thought_signature": null,
+              "video_metadata": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": null,
+        "avg_logprobs": null,
+        "grounding_metadata": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-2.5-flash-lite-preview-09-2025",
+    "prompt_feedback": null,
+    "response_id": "tgwXaf_QN865juMPh_m0oAM",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 159,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 33,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 33
+        }
+      ],
+      "thoughts_token_count": null,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 192,
+      "traffic_type": null
+    },
+    "automatic_function_calling_history": null,
+    "parsed": null
+  },
+  {
+    "sdk_http_response": {
+      "headers": {
+        "content-type": "text/event-stream",
+        "content-disposition": "attachment",
+        "vary": "Origin, X-Origin, Referer",
+        "transfer-encoding": "chunked",
+        "date": "Fri, 14 Nov 2025 11:04:23 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=1160",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "\": \"Sydney\",\n      \"temperature_c\": 14.1,\n      \"condition\": \"Windy\"\n    }\n  ]\n}",
+              "thought": null,
+              "thought_signature": null,
+              "video_metadata": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "avg_logprobs": null,
+        "grounding_metadata": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-2.5-flash-lite-preview-09-2025",
+    "prompt_feedback": null,
+    "response_id": "tgwXaf_QN865juMPh_m0oAM",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 193,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 33,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 33
+        }
+      ],
+      "thoughts_token_count": null,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 226,
+      "traffic_type": null
+    },
+    "automatic_function_calling_history": null,
+    "parsed": null
+  }
+]

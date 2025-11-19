@@ -1,0 +1,47 @@
+{
+  "id": "gen-1763118288-O9L90myeS9bfTWZ7sXWh",
+  "choices": [
+    {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [
+          {
+            "id": "call_e2aec29de5474537a55a6e42",
+            "function": {
+              "arguments": "{\"city\": \"Berlin\"}",
+              "name": "get_weather"
+            },
+            "type": "function",
+            "index": 0
+          }
+        ],
+        "reasoning": null
+      },
+      "native_finish_reason": "tool_calls"
+    }
+  ],
+  "created": 1763118288,
+  "model": "kwaipilot/kat-coder-pro:free",
+  "object": "chat.completion",
+  "service_tier": null,
+  "system_fingerprint": "",
+  "usage": {
+    "completion_tokens": 22,
+    "prompt_tokens": 288,
+    "total_tokens": 310,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 39
+    }
+  },
+  "provider": "Novita"
+}

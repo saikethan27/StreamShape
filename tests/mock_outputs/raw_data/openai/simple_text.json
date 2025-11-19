@@ -1,0 +1,37 @@
+{
+  "id": "gen-1763118273-JNtLalx9e6Wcm5jW4KSF",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "Sure! Here's a joke about AI:\n\nWhy did the AI go to therapy?\n\nBecause it had deep learning issues! 😄",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null,
+        "reasoning": null
+      },
+      "native_finish_reason": "stop"
+    }
+  ],
+  "created": 1763118273,
+  "model": "kwaipilot/kat-coder-pro:free",
+  "object": "chat.completion",
+  "service_tier": null,
+  "system_fingerprint": "",
+  "usage": {
+    "completion_tokens": 27,
+    "prompt_tokens": 15,
+    "total_tokens": 42,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 3
+    }
+  },
+  "provider": "Novita"
+}
