@@ -40,8 +40,8 @@ pip install streamshape
 Or install from source:
 
 ```bash
-git clone <repository-url>
-cd streamshape
+git clone https://github.com/saikethan27/StreamShape.git
+cd src/streamshape
 pip install -e .
 ```
 
