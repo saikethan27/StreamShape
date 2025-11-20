@@ -7,7 +7,7 @@ from pydantic import BaseModel, Field
 from dotenv import load_dotenv
 
 # Import the unified LLM interface
-from src.streamshape import OpenRouter, Google, OpenAICompatible
+from streamshape import OpenRouter, Google, OpenAICompatible
 
 # Load environment variables
 load_dotenv()
