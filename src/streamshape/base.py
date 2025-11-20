@@ -396,6 +396,10 @@ class BaseLLMProvider(ABC):
         Returns:
             Response format dictionary for LiteLLM
         """
+        # Get the schema with ref_template='#/items/$defs/{model}' to fix nested references
+        # This ensures $ref paths work correctly when schema is wrapped in array
+        schema = output_schema.model_json_schema(ref_template='#/items/$defs/{model}')
+        
         return {
             "type": "json_schema",
             "json_schema": {
@@ -403,7 +407,7 @@ class BaseLLMProvider(ABC):
                 "strict": False,
                 "schema": {
                     "type": "array",
-                    "items": output_schema.model_json_schema()
+                    "items": schema
                 }
             }
         }

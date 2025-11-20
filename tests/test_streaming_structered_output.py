@@ -1,10 +1,14 @@
 """
 Test streaming structured output parser with mock data.
 """
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
+
 from pydantic import BaseModel, Field
 from typing import List
-from mock_outputs.mock_data import openai as openai_mock
-from src.streaming_structured_output_parser.parse_llm_output import read_tokens
+from tests.mock_outputs.mock_data import openai as openai_mock
+from streamshape.streaming_structured_output_parser.parse_llm_output import read_tokens
 
 
 # Define the schema based on the mock data (cities with weather)

@@ -5,3 +5,6 @@ __pycache__/
 .kiro/
 .pytest_cache/
 dummy/
+build/
+dist/
+*.egg-info

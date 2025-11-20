@@ -1,12 +1,16 @@
 """
 Property-based tests for BaseLLMProvider.
 """
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
+
 import pytest
 from unittest.mock import Mock, patch
-from hypothesis import given, settings, strategies as st
+from hypothesis import given, settings, strategies as st, HealthCheck
 from pydantic import BaseModel
-from src.base import BaseLLMProvider
-from src.exceptions import ValidationError
+from streamshape.base import BaseLLMProvider
+from streamshape.exceptions import ValidationError
 
 
 class ConcreteProvider(BaseLLMProvider):
@@ -20,10 +24,11 @@ class ConcreteProvider(BaseLLMProvider):
     api_key=st.text(min_size=1, max_size=100),
     extra_params=st.dictionaries(
         keys=st.text(min_size=1, max_size=20),
-        values=st.one_of(st.text(), st.integers(), st.floats(allow_nan=False), st.booleans())
+        values=st.one_of(st.text(), st.integers(), st.floats(allow_nan=False), st.booleans()),
+        max_size=5
     )
 )
-@settings(max_examples=100)
+@settings(max_examples=100, suppress_health_check=[HealthCheck.too_slow])
 def test_provider_instantiation_stores_credentials(api_key: str, extra_params: dict):
     """
     Property 1: Provider instantiation stores credentials
@@ -100,7 +105,7 @@ def test_generate_validates_required_parameters():
         provider.generate("gpt-4", "system", "")
 
 
-@patch('src.litellm_integration.litellm.completion')
+@patch('streamshape.litellm_integration.litellm.completion')
 def test_generate_returns_complete_text(mock_completion):
     """Test that generate returns complete text response."""
     # Mock the LiteLLM response
@@ -135,7 +140,7 @@ def test_generate_returns_complete_text(mock_completion):
     assert call_kwargs["messages"][1]["role"] == "user"
 
 
-@patch('src.litellm_integration.litellm.completion')
+@patch('streamshape.litellm_integration.litellm.completion')
 def test_generate_forwards_optional_parameters(mock_completion):
     """Test that generate forwards optional parameters to LiteLLM."""
     # Mock the LiteLLM response
@@ -182,7 +187,7 @@ def test_stream_validates_required_parameters():
         list(provider.stream("gpt-4", "system", ""))
 
 
-@patch('src.litellm_integration.litellm.completion')
+@patch('streamshape.litellm_integration.litellm.completion')
 def test_stream_yields_text_chunks(mock_completion):
     """Test that stream yields text chunks as they arrive."""
     # Mock the LiteLLM streaming response
@@ -230,7 +235,7 @@ def test_stream_yields_text_chunks(mock_completion):
     assert len(call_kwargs["messages"]) == 2
 
 
-@patch('src.litellm_integration.litellm.completion')
+@patch('streamshape.litellm_integration.litellm.completion')
 def test_stream_forwards_optional_parameters(mock_completion):
     """Test that stream forwards optional parameters to LiteLLM."""
     # Mock the LiteLLM streaming response
@@ -259,7 +264,7 @@ def test_stream_forwards_optional_parameters(mock_completion):
     assert call_kwargs["top_p"] == 0.9
 
 
-@patch('src.litellm_integration.litellm.completion')
+@patch('streamshape.litellm_integration.litellm.completion')
 def test_stream_handles_empty_content(mock_completion):
     """Test that stream handles chunks with None content."""
     # Mock chunks with some having None content
@@ -331,7 +336,7 @@ def test_tool_call_validates_tools_is_list():
         provider.tool_call("gpt-4", "system", "user", {"type": "function"})
 
 
-@patch('src.litellm_integration.litellm.completion')
+@patch('streamshape.litellm_integration.litellm.completion')
 def test_tool_call_returns_tool_name_and_arguments(mock_completion):
     """Test that tool_call returns tool name and arguments."""
     # Mock the LiteLLM response with tool call
@@ -381,7 +386,7 @@ def test_tool_call_returns_tool_name_and_arguments(mock_completion):
     assert call_kwargs["tools"] == tools
 
 
-@patch('src.litellm_integration.litellm.completion')
+@patch('streamshape.litellm_integration.litellm.completion')
 def test_tool_call_forwards_optional_parameters(mock_completion):
     """Test that tool_call forwards optional parameters to LiteLLM."""
     # Mock the LiteLLM response
@@ -414,7 +419,7 @@ def test_tool_call_forwards_optional_parameters(mock_completion):
     assert call_kwargs["max_tokens"] == 100
 
 
-@patch('src.litellm_integration.litellm.completion')
+@patch('streamshape.litellm_integration.litellm.completion')
 def test_tool_call_handles_no_tool_calls(mock_completion):
     """Test that tool_call handles responses with no tool calls."""
     # Mock the LiteLLM response with no tool calls
@@ -487,18 +492,22 @@ def test_structured_streaming_output_validates_schema_is_basemodel():
         list(provider.structured_streaming_output("gpt-4", "system", "user", "not a class"))
 
 
-@patch('src.parser_integration.parse_streaming_response')
-@patch('src.litellm_integration.litellm.completion')
+@patch('streamshape.parser_integration.parse_streaming_response')
+@patch('streamshape.litellm_integration.litellm.completion')
 def test_structured_streaming_output_yields_validated_objects(mock_completion, mock_parser):
     """Test that structured_streaming_output yields validated Pydantic objects."""
     # Mock the LiteLLM streaming response
     mock_response = Mock()
     mock_completion.return_value = mock_response
     
-    # Mock the parser to yield validated objects
+    # Mock the parser to yield validated objects in the expected format
     obj1 = SampleSchema(name="test1", value=1)
     obj2 = SampleSchema(name="test2", value=2)
-    mock_parser.return_value = iter([obj1, obj2])
+    mock_parser.return_value = iter([
+        {"data": obj1, "usage": {}, "finished": False},
+        {"data": obj2, "usage": {}, "finished": False},
+        {"data": None, "usage": {}, "finished": True}
+    ])
     
     # Create provider and call structured_streaming_output
     provider = ConcreteProvider("test_api_key")
@@ -530,8 +539,8 @@ def test_structured_streaming_output_yields_validated_objects(mock_completion, m
     mock_parser.assert_called_once_with(mock_response, SampleSchema)
 
 
-@patch('src.parser_integration.parse_streaming_response')
-@patch('src.litellm_integration.litellm.completion')
+@patch('streamshape.parser_integration.parse_streaming_response')
+@patch('streamshape.litellm_integration.litellm.completion')
 def test_structured_streaming_output_forwards_optional_parameters(mock_completion, mock_parser):
     """Test that structured_streaming_output forwards optional parameters to LiteLLM."""
     # Mock the LiteLLM streaming response
@@ -558,8 +567,8 @@ def test_structured_streaming_output_forwards_optional_parameters(mock_completio
     assert call_kwargs["max_tokens"] == 100
 
 
-@patch('src.parser_integration.parse_streaming_response')
-@patch('src.litellm_integration.litellm.completion')
+@patch('streamshape.parser_integration.parse_streaming_response')
+@patch('streamshape.litellm_integration.litellm.completion')
 def test_structured_streaming_output_builds_correct_response_format(mock_completion, mock_parser):
     """Test that structured_streaming_output builds correct response_format."""
     # Mock the LiteLLM streaming response

@@ -51,6 +51,12 @@ def call_litellm(
                 full_model = model
         elif provider == "openai" and not model.startswith("openai/"):
             full_model = model  # OpenAI models don't need prefix when using official API
+        elif provider == "openrouter":
+            # OpenRouter requires openrouter/ prefix
+            if not model.startswith("openrouter/"):
+                full_model = f"openrouter/{model}"
+            else:
+                full_model = model
         elif "/" not in model:
             full_model = f"{provider}/{model}"
         else:

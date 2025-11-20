@@ -2,6 +2,10 @@
 
 from __future__ import annotations
 
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
+
 import json
 from typing import List
 from unittest.mock import patch
@@ -9,8 +13,8 @@ from unittest.mock import patch
 import pytest
 from pydantic import BaseModel, Field
 
-from src import OpenAI, Google, Anthropic
-from src.exceptions import ValidationError
+from streamshape import OpenAI, Google, Anthropic
+from streamshape.exceptions import ValidationError
 from tests.mock_outputs.mock_data import openai as openai_mock
 from tests.mock_outputs.mock_data import google as google_mock
 from tests.mock_outputs.mock_data import anthropic as anthropic_mock
@@ -27,7 +31,7 @@ def test_openai_generate_with_mock_data() -> None:
     """Test OpenAI provider's generate method with mock data."""
     mock_response = openai_mock.get_simple_text_response()
     
-    with patch("src.litellm_integration.litellm.completion", return_value=mock_response):
+    with patch("streamshape.litellm_integration.litellm.completion", return_value=mock_response):
         provider = OpenAI(api_key="test-key")
         result = provider.generate(
             model="gpt-4",
@@ -52,7 +56,7 @@ def test_google_generate_with_mock_data() -> None:
     mock_response.choices[0].message = Mock()
     mock_response.choices[0].message.content = "Why did the programmer quit his job? Because he didn't get arrays!"
     
-    with patch("src.litellm_integration.litellm.completion", return_value=mock_response):
+    with patch("streamshape.litellm_integration.litellm.completion", return_value=mock_response):
         provider = Google(api_key="test-key")
         result = provider.generate(
             model="gemini-pro",
@@ -77,7 +81,7 @@ def test_anthropic_generate_with_mock_data() -> None:
     mock_response.choices[0].message = Mock()
     mock_response.choices[0].message.content = "Why don't scientists trust atoms? Because they make up everything!"
     
-    with patch("src.litellm_integration.litellm.completion", return_value=mock_response):
+    with patch("streamshape.litellm_integration.litellm.completion", return_value=mock_response):
         provider = Anthropic(api_key="test-key")
         result = provider.generate(
             model="claude-3-opus",
@@ -112,7 +116,7 @@ def test_tool_call_with_mock_data() -> None:
         }
     ]
     
-    with patch("src.litellm_integration.litellm.completion", return_value=mock_response):
+    with patch("streamshape.litellm_integration.litellm.completion", return_value=mock_response):
         provider = OpenAI(api_key="test-key")
         result = provider.tool_call(
             model="gpt-4",
@@ -132,7 +136,7 @@ def test_streaming_with_mock_data() -> None:
     """Test streaming functionality with mock data."""
     mock_stream = openai_mock.get_streaming_response()
     
-    with patch("src.litellm_integration.litellm.completion", return_value=mock_stream):
+    with patch("streamshape.litellm_integration.litellm.completion", return_value=mock_stream):
         provider = OpenAI(api_key="test-key")
         chunks = list(provider.stream(
             model="gpt-4",
@@ -160,7 +164,7 @@ def test_google_streaming_with_mock_data() -> None:
         chunk.choices[0].delta.content = text
         mock_chunks.append(chunk)
     
-    with patch("src.litellm_integration.litellm.completion", return_value=iter(mock_chunks)):
+    with patch("streamshape.litellm_integration.litellm.completion", return_value=iter(mock_chunks)):
         provider = Google(api_key="test-key")
         chunks = list(provider.stream(
             model="gemini-pro",
@@ -188,7 +192,7 @@ def test_anthropic_streaming_with_mock_data() -> None:
         chunk.choices[0].delta.content = text
         mock_chunks.append(chunk)
     
-    with patch("src.litellm_integration.litellm.completion", return_value=iter(mock_chunks)):
+    with patch("streamshape.litellm_integration.litellm.completion", return_value=iter(mock_chunks)):
         provider = Anthropic(api_key="test-key")
         chunks = list(provider.stream(
             model="claude-3-opus",
@@ -219,7 +223,7 @@ def test_structured_output_with_mock_data() -> None:
         {"city": "Delhi", "condition": "Hazy", "temperature_c": 28}
     ])
     
-    with patch("src.litellm_integration.litellm.completion", return_value=mock_response):
+    with patch("streamshape.litellm_integration.litellm.completion", return_value=mock_response):
         provider = OpenAI(api_key="test-key")
         result = provider.structured_output(
             model="gpt-4",
@@ -296,7 +300,7 @@ def test_structured_output_validation() -> None:
         {"city": "London", "condition": "Rainy", "temperature_c": 15}
     ])
     
-    with patch("src.litellm_integration.litellm.completion", return_value=mock_response):
+    with patch("streamshape.litellm_integration.litellm.completion", return_value=mock_response):
         provider = OpenAI(api_key="test-key")
         result = provider.structured_output(
             model="gpt-4",
@@ -374,7 +378,7 @@ def test_multiple_providers_consistency() -> None:
     
     for provider in providers:
         mock_response = create_mock_response("This is a test joke!")
-        with patch("src.litellm_integration.litellm.completion", return_value=mock_response):
+        with patch("streamshape.litellm_integration.litellm.completion", return_value=mock_response):
             result = provider.generate(
                 model="test-model",
                 system_prompt="You are a helpful assistant.",

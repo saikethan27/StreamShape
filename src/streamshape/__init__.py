@@ -12,6 +12,7 @@ from streamshape.providers import (
     OpenRouter,
     XAI,
     OpenAICompatible,
+    LiteLLM,
 )
 from streamshape.exceptions import (
     UnifiedLLMError,
@@ -29,6 +30,7 @@ __all__ = [
     "OpenRouter",
     "XAI",
     "OpenAICompatible",
+    "LiteLLM",
     "UnifiedLLMError",
     "ConfigurationError",
     "ValidationError",

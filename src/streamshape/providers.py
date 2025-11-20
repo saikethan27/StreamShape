@@ -57,3 +57,31 @@ class OpenAICompatible(BaseLLMProvider):
     
     def _get_provider_name(self) -> str:
         return "openai"
+
+
+class LiteLLM(BaseLLMProvider):
+    """
+    General LiteLLM provider client for any supported provider.
+    
+    Use this when you want to directly specify the provider and model
+    in LiteLLM format (e.g., "openrouter/model-name", "anthropic/claude-3").
+    """
+    
+    def __init__(self, api_key: str, provider: str, **kwargs):
+        """
+        Initialize general LiteLLM provider.
+        
+        Args:
+            api_key: API key for the provider
+            provider: Provider name (e.g., "openrouter", "anthropic", "openai")
+            **kwargs: Additional configuration (base_url, etc.)
+        """
+        super().__init__(api_key, **kwargs)
+        self.provider = provider
+        
+        # If base_url is provided in kwargs, store it
+        if 'base_url' in kwargs:
+            self.base_url = kwargs.pop('base_url')
+    
+    def _get_provider_name(self) -> str:
+        return self.provider
