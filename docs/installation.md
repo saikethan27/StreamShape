@@ -1,6 +1,6 @@
 # Installation Guide
 
-Complete guide to installing and setting up Unified LLM Interface.
+Complete guide to installing and setting up StreamShape.
 
 ## Requirements
 
@@ -12,15 +12,15 @@ Complete guide to installing and setting up Unified LLM Interface.
 ### Method 1: Install from PyPI (Recommended)
 
 ```bash
-pip install unified-llm-interface
+pip install streamshape
 ```
 
 ### Method 2: Install from Source
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/unified-llm-interface.git
-cd unified-llm-interface
+git clone https://github.com/yourusername/streamshape.git
+cd streamshape
 
 # Install in development mode
 pip install -e .
@@ -29,7 +29,7 @@ pip install -e .
 ### Method 3: Install with Poetry
 
 ```bash
-poetry add unified-llm-interface
+poetry add streamshape
 ```
 
 ## Dependencies
@@ -47,9 +47,9 @@ The package automatically installs these dependencies:
 
 ```python
 # Test the installation
-from src import OpenAI
+from streamshape import OpenAI
 
-print("✅ Unified LLM Interface installed successfully!")
+print("✅ StreamShape installed successfully!")
 ```
 
 ## Setting Up API Keys
@@ -72,7 +72,7 @@ Load in your code:
 ```python
 import os
 from dotenv import load_dotenv
-from src import OpenAI
+from streamshape import OpenAI
 
 load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -87,7 +87,7 @@ pip install python-dotenv
 ### Option 2: Direct in Code
 
 ```python
-from src import OpenAI
+from streamshape import OpenAI
 
 client = OpenAI(api_key="sk-your-api-key-here")
 ```
@@ -170,7 +170,7 @@ source venv/bin/activate
 venv\Scripts\activate
 
 # Install package
-pip install unified-llm-interface
+pip install streamshape
 ```
 
 ### Using conda
@@ -183,7 +183,7 @@ conda create -n llm-env python=3.10
 conda activate llm-env
 
 # Install package
-pip install unified-llm-interface
+pip install streamshape
 ```
 
 ## Upgrading
@@ -191,19 +191,19 @@ pip install unified-llm-interface
 ### Upgrade to Latest Version
 
 ```bash
-pip install --upgrade unified-llm-interface
+pip install --upgrade streamshape
 ```
 
 ### Upgrade Specific Version
 
 ```bash
-pip install unified-llm-interface==1.2.0
+pip install streamshape==1.2.0
 ```
 
 ## Uninstallation
 
 ```bash
-pip uninstall unified-llm-interface
+pip uninstall streamshape
 ```
 
 ## Troubleshooting
@@ -217,7 +217,7 @@ ModuleNotFoundError: No module named 'src'
 
 **Solution:**
 ```bash
-pip install unified-llm-interface
+pip install streamshape
 # or
 pip install -e .  # if installing from source
 ```
@@ -234,7 +234,7 @@ ERROR: pip's dependency resolver does not currently take into account all the pa
 # Create a fresh virtual environment
 python -m venv fresh_env
 source fresh_env/bin/activate  # or fresh_env\Scripts\activate on Windows
-pip install unified-llm-interface
+pip install streamshape
 ```
 
 ### Issue: SSL Certificate Error
@@ -250,7 +250,7 @@ SSLError: [SSL: CERTIFICATE_VERIFY_FAILED]
 pip install --upgrade certifi
 
 # Or install with --trusted-host
-pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org unified-llm-interface
+pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org streamshape
 ```
 
 ### Issue: Permission Denied
@@ -275,8 +275,8 @@ For contributing or development:
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/unified-llm-interface.git
-cd unified-llm-interface
+git clone https://github.com/yourusername/streamshape.git
+cd streamshape
 
 # Install with development dependencies
 pip install -e ".[dev]"
@@ -294,7 +294,7 @@ FROM python:3.10-slim
 WORKDIR /app
 
 # Install package
-RUN pip install unified-llm-interface
+RUN pip install streamshape
 
 # Copy your application
 COPY . .
@@ -325,3 +325,4 @@ If you encounter issues:
 2. Review [Error Handling](error-handling.md)
 3. Open an issue on GitHub
 4. Check existing issues for solutions
+

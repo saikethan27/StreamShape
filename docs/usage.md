@@ -1,6 +1,6 @@
 # Usage Guide
 
-Comprehensive guide to using all features of Unified LLM Interface.
+Comprehensive guide to using all features of StreamShape.
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ Comprehensive guide to using all features of Unified LLM Interface.
 ### Initializing a Provider
 
 ```python
-from src import OpenAI
+from streamshape import OpenAI
 
 client = OpenAI(api_key="your-api-key")
 ```
@@ -793,3 +793,4 @@ print(session.send("How do I add items to it?"))  # Has context from previous
 - **Examples**: See [Examples](examples.md) for more real-world use cases
 - **API Reference**: Check [API Reference](api-reference.md) for complete documentation
 - **Best Practices**: Read [Best Practices](best-practices.md) for optimization tips
+

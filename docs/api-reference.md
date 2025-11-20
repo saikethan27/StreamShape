@@ -1,6 +1,6 @@
 # API Reference
 
-Complete API documentation for Unified LLM Interface.
+Complete API documentation for StreamShape.
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ All provider classes inherit from `BaseLLMProvider` and share the same interface
 ### OpenAI
 
 ```python
-from src import OpenAI
+from streamshape import OpenAI
 
 client = OpenAI(api_key: str, **kwargs)
 ```
@@ -33,7 +33,7 @@ client = OpenAI(api_key: str, **kwargs)
 ### Anthropic
 
 ```python
-from src import Anthropic
+from streamshape import Anthropic
 
 client = Anthropic(api_key: str, **kwargs)
 ```
@@ -52,7 +52,7 @@ client = Anthropic(api_key: str, **kwargs)
 ### Google
 
 ```python
-from src import Google
+from streamshape import Google
 
 client = Google(api_key: str, **kwargs)
 ```
@@ -69,7 +69,7 @@ client = Google(api_key: str, **kwargs)
 ### OpenRouter
 
 ```python
-from src import OpenRouter
+from streamshape import OpenRouter
 
 client = OpenRouter(api_key: str, **kwargs)
 ```
@@ -83,7 +83,7 @@ client = OpenRouter(api_key: str, **kwargs)
 ### XAI
 
 ```python
-from src import XAI
+from streamshape import XAI
 
 client = XAI(api_key: str, **kwargs)
 ```
@@ -99,7 +99,7 @@ client = XAI(api_key: str, **kwargs)
 ### OpenAICompatible
 
 ```python
-from src import OpenAICompatible
+from streamshape import OpenAICompatible
 
 client = OpenAICompatible(
     api_key: str,
@@ -117,4 +117,5 @@ client = OpenAICompatible(
 - Local models (Ollama, LM Studio, etc.)
 - Custom OpenAI-compatible APIs
 - Self-hosted models
+
 

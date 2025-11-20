@@ -10,7 +10,7 @@ Detailed configuration guide for each supported provider.
 2. Initialize client:
 
 ```python
-from src import OpenAI
+from streamshape import OpenAI
 
 client = OpenAI(api_key="sk-...")
 ```
@@ -37,7 +37,7 @@ client = OpenAI(api_key="sk-...")
 2. Initialize client:
 
 ```python
-from src import Anthropic
+from streamshape import Anthropic
 
 client = Anthropic(api_key="sk-ant-...")
 ```
@@ -58,7 +58,7 @@ client = Anthropic(api_key="sk-ant-...")
 2. Initialize client:
 
 ```python
-from src import Google
+from streamshape import Google
 
 client = Google(api_key="...")
 ```
@@ -79,7 +79,7 @@ client = Google(api_key="...")
 2. Initialize client:
 
 ```python
-from src import OpenRouter
+from streamshape import OpenRouter
 
 client = OpenRouter(api_key="sk-or-...")
 ```
@@ -106,7 +106,7 @@ client = OpenRouter(api_key="sk-or-...")
 2. Initialize client:
 
 ```python
-from src import XAI
+from streamshape import XAI
 
 client = XAI(api_key="...")
 ```
@@ -121,7 +121,7 @@ client = XAI(api_key="...")
 ### Local Models (Ollama)
 
 ```python
-from src import OpenAICompatible
+from streamshape import OpenAICompatible
 
 client = OpenAICompatible(
     api_key="ollama",  # Can be any string
@@ -198,11 +198,11 @@ The API is identical across providers:
 # Just change the import and API key!
 
 # OpenAI
-from src import OpenAI
+from streamshape import OpenAI
 client = OpenAI(api_key="...")
 
 # Anthropic
-from src import Anthropic
+from streamshape import Anthropic
 client = Anthropic(api_key="...")
 
 # Same code works for both!
@@ -212,3 +212,4 @@ response = client.generate(
     user_prompt="Hello!"
 )
 ```
+

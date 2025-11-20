@@ -1,6 +1,6 @@
 # Output Formats
 
-Complete reference for the output structure of each method in Unified LLM Interface.
+Complete reference for the output structure of each method in StreamShape.
 
 ## Overview
 
@@ -34,7 +34,7 @@ Returns complete text response all at once.
 ### Example Usage
 
 ```python
-from src import OpenAI
+from streamshape import OpenAI
 
 client = OpenAI(api_key="your-api-key")
 
@@ -95,7 +95,7 @@ Yields text chunks as they're generated in real-time.
 ### Example Usage
 
 ```python
-from src import OpenAI
+from streamshape import OpenAI
 
 client = OpenAI(api_key="your-api-key")
 
@@ -236,7 +236,7 @@ Returns function/tool call information.
 ### Example Usage
 
 ```python
-from src import OpenAI
+from streamshape import OpenAI
 
 client = OpenAI(api_key="your-api-key")
 
@@ -369,7 +369,7 @@ Returns validated Pydantic objects all at once.
 ### Example Usage
 
 ```python
-from src import OpenAI
+from streamshape import OpenAI
 from pydantic import BaseModel
 from typing import List
 
@@ -564,7 +564,7 @@ BaseModel  # Yields Pydantic objects directly, one at a time
 ### Example Usage
 
 ```python
-from src import OpenAI
+from streamshape import OpenAI
 from pydantic import BaseModel
 
 client = OpenAI(api_key="your-api-key")
@@ -775,3 +775,4 @@ for obj in client.structured_streaming_output(...):
 - [API Reference](api-reference.md) - Complete API documentation
 - [Examples](examples.md) - Real-world use cases
 - [CHANGELOG_RESPONSE_FORMAT.md](../CHANGELOG_RESPONSE_FORMAT.md) - Detailed changelog
+

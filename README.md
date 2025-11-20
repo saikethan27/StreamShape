@@ -1,4 +1,4 @@
-# Unified LLM Interface
+# StreamShape
 
 A Python package that provides a simple, consistent interface for interacting with multiple Large Language Model (LLM) providers. Write once, run anywhere - switch between OpenAI, Anthropic, Google, and other providers without changing your code.
 
@@ -34,21 +34,21 @@ A Python package that provides a simple, consistent interface for interacting wi
 ### Installation
 
 ```bash
-pip install -r requirements.txt
+pip install streamshape
 ```
 
 Or install from source:
 
 ```bash
 git clone <repository-url>
-cd output_parsar
+cd streamshape
 pip install -e .
 ```
 
 ### Basic Usage
 
 ```python
-from src import OpenAI
+from streamshape import OpenAI
 from pydantic import BaseModel
 
 # Initialize provider
@@ -93,15 +93,15 @@ for recipe in result["data"]:
 ```python
 # Just change the import - same API!
 
-from src import OpenAI
+from streamshape import OpenAI
 client = OpenAI(api_key="sk-...")
 
 # Or use Anthropic
-from src import Anthropic
+from streamshape import Anthropic
 client = Anthropic(api_key="sk-ant-...")
 
 # Or Google
-from src import Google
+from streamshape import Google
 client = Google(api_key="...")
 
 # Same code works for all providers!
@@ -125,6 +125,10 @@ client = Google(api_key="...")
 ### 1. Generate (Complete Text)
 
 ```python
+from streamshape import OpenAI
+
+client = OpenAI(api_key="your-api-key")
+
 response = client.generate(
     model="gpt-4",
     system_prompt="You are a helpful assistant.",
@@ -209,11 +213,11 @@ for task in client.structured_streaming_output(
 
 ## Real-World Examples
 
-Check out the `/real_use` directory for complete working examples:
+Check out the `/example` directory for complete working examples:
 
-- **[All Methods Usage](real_use/all_methods_usage.py)** - Demonstrates all 5 output modes
-- **[Structured Output](real_use/structured_output_usage.py)** - Complete structured output examples
-- **[Streaming Structured Output](real_use/streaming_structured_output_usage.py)** - Real-time structured data
+- **[All Methods Usage](example/all_methods_usage.py)** - Demonstrates all 5 output modes
+- **[Structured Output](example/structured_output_usage.py)** - Complete structured output examples
+- **[Streaming Structured Output](example/streaming_structured_output_usage.py)** - Real-time structured data
 
 ## Testing
 
@@ -249,7 +253,7 @@ Load them in your code:
 ```python
 import os
 from dotenv import load_dotenv
-from src import OpenAI
+from streamshape import OpenAI
 
 load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -258,18 +262,18 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 ## Project Structure
 
 ```
-output_parsar/
-├── src/                          # Main package source code
-│   ├── base.py                   # Base provider class
-│   ├── providers.py              # Provider implementations
-│   ├── exceptions.py             # Custom exceptions
-│   ├── litellm_integration.py    # LiteLLM integration
-│   ├── parser_integration.py     # Parser integration
-│   └── streaming_structured_output_parser/  # Streaming parser
+streamshape/
+├── src/
+│   └── streamshape/              # Main package source code
+│       ├── base.py               # Base provider class
+│       ├── providers.py          # Provider implementations
+│       ├── exceptions.py         # Custom exceptions
+│       ├── litellm_integration.py    # LiteLLM integration
+│       ├── parser_integration.py     # Parser integration
+│       └── streaming_structured_output_parser/  # Streaming parser
 ├── docs/                         # Complete documentation
 ├── tests/                        # Test suite
-├── real_use/                     # Real-world examples
-├── dummy/                        # Demo scripts
+├── example/                      # Real-world examples
 └── requirements.txt              # Dependencies
 ```
 

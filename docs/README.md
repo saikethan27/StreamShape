@@ -1,6 +1,6 @@
-# Unified LLM Interface Documentation
+# StreamShape Documentation
 
-Welcome to the Unified LLM Interface package documentation! This package provides a simple, consistent interface for interacting with multiple LLM providers.
+Welcome to the StreamShape package documentation! This package provides a simple, consistent interface for interacting with multiple LLM providers.
 
 ## Documentation Structure
 
@@ -14,9 +14,9 @@ Welcome to the Unified LLM Interface package documentation! This package provide
 - **[Error Handling](error-handling.md)** - Understanding and handling errors
 - **[Best Practices](best-practices.md)** - Tips and recommendations
 
-## What is Unified LLM Interface?
+## What is StreamShape?
 
-Unified LLM Interface is a Python package that provides a simple, consistent API for working with multiple Large Language Model (LLM) providers. Instead of learning different APIs for OpenAI, Anthropic, Google, and others, you can use one unified interface.
+StreamShape is a Python package that provides a simple, consistent API for working with multiple Large Language Model (LLM) providers. Instead of learning different APIs for OpenAI, Anthropic, Google, and others, you can use one unified interface.
 
 ## Key Features
 
@@ -48,7 +48,7 @@ Unified LLM Interface is a Python package that provides a simple, consistent API
 ## Quick Example
 
 ```python
-from src import OpenAI
+from streamshape import OpenAI
 from pydantic import BaseModel
 
 # Initialize provider
@@ -93,3 +93,4 @@ for joke in jokes:
 ## License
 
 This package is open source and available under the MIT License.
+

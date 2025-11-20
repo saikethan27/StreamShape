@@ -1,18 +1,18 @@
 # Quick Start Guide
 
-Get started with Unified LLM Interface in 5 minutes!
+Get started with StreamShape in 5 minutes!
 
 ## Installation
 
 ```bash
-pip install unified-llm-interface
+pip install streamshape
 ```
 
 Or install from source:
 
 ```bash
-git clone https://github.com/yourusername/unified-llm-interface.git
-cd unified-llm-interface
+git clone https://github.com/yourusername/streamshape.git
+cd streamshape
 pip install -e .
 ```
 
@@ -30,7 +30,7 @@ Choose a provider and get an API key:
 ### 2. Initialize a Provider
 
 ```python
-from src import OpenAI
+from streamshape import OpenAI
 
 # Initialize with your API key
 client = OpenAI(api_key="your-api-key-here")
@@ -161,27 +161,27 @@ Switch providers by changing the import:
 
 ```python
 # OpenAI
-from src import OpenAI
+from streamshape import OpenAI
 client = OpenAI(api_key="sk-...")
 
 # Anthropic
-from src import Anthropic
+from streamshape import Anthropic
 client = Anthropic(api_key="sk-ant-...")
 
 # Google
-from src import Google
+from streamshape import Google
 client = Google(api_key="...")
 
 # OpenRouter
-from src import OpenRouter
+from streamshape import OpenRouter
 client = OpenRouter(api_key="sk-or-...")
 
 # xAI
-from src import XAI
+from streamshape import XAI
 client = XAI(api_key="...")
 
 # OpenAI-compatible (e.g., local models)
-from src import OpenAICompatible
+from streamshape import OpenAICompatible
 client = OpenAICompatible(
     api_key="...",
     base_url="http://localhost:8000/v1"
@@ -223,7 +223,7 @@ GOOGLE_API_KEY=...
 ```python
 import os
 from dotenv import load_dotenv
-from src import OpenAI
+from streamshape import OpenAI
 
 load_dotenv()
 
@@ -243,7 +243,7 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 ### ModuleNotFoundError
 
 ```bash
-pip install unified-llm-interface
+pip install streamshape
 ```
 
 ### Authentication Error
@@ -258,3 +258,4 @@ Verify the model name is correct for your provider:
 - Google: `gemini-pro`, `gemini-1.5-pro`
 
 See [Provider Configuration](providers.md) for complete model lists.
+

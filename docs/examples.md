@@ -1,6 +1,6 @@
 # Examples
 
-Real-world examples and use cases for Unified LLM Interface.
+Real-world examples and use cases for StreamShape.
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@ Real-world examples and use cases for Unified LLM Interface.
 ### Blog Post Generator
 
 ```python
-from src import OpenAI
+from streamshape import OpenAI
 from pydantic import BaseModel
 from typing import List
 
@@ -481,3 +481,4 @@ See the `/examples` directory in the repository for more complete examples:
 - Code review assistant
 - Language translation service
 - Content moderation system
+
