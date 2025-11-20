@@ -35,7 +35,7 @@ setuptools.setup(
     url="https://github.com/saikethan27/StreamShape",
     long_description=pathlib.Path('README.md').read_text(encoding='utf-8'),
     long_description_content_type='text/markdown',
-    packages=setuptools.find_namespace_packages('src'),
+    packages=setuptools.find_packages('src'),
     package_dir={'': 'src'},
     install_requires=CORE_REQUIRES,
     extras_require=EXTRAS,

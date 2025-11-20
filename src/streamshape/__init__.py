@@ -5,7 +5,7 @@ A simple, consistent interface for interacting with multiple LLM providers.
 Supports OpenAI, Google, Anthropic, OpenRouter, xAI, and OpenAI-compatible endpoints.
 """
 
-from src.providers import (
+from streamshape.providers import (
     OpenAI,
     Google,
     Anthropic,
@@ -13,7 +13,7 @@ from src.providers import (
     XAI,
     OpenAICompatible,
 )
-from src.exceptions import (
+from streamshape.exceptions import (
     UnifiedLLMError,
     ConfigurationError,
     ValidationError,

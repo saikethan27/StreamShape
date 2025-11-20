@@ -2,7 +2,7 @@
 Provider-specific classes for different LLM services.
 """
 
-from src.base import BaseLLMProvider
+from .base import BaseLLMProvider
 
 
 class OpenAI(BaseLLMProvider):

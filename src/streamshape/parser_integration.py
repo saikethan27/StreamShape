@@ -29,7 +29,7 @@ def parse_streaming_response(
     Raises:
         ParsingError: When parsing or validation fails
     """
-    from src.streaming_structured_output_parser.parse_llm_output import read_tokens
+    from .streaming_structured_output_parser.parse_llm_output import read_tokens
     
     # Always use "openai_lib" as request_type for LiteLLM responses
     # Yield objects from read_tokens unchanged
