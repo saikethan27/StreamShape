@@ -2,7 +2,7 @@ import setuptools
 import pathlib
 
 PKG_NAME = "streamshape"
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 
 # Core dependencies (minimal install)
 CORE_REQUIRES = [
@@ -37,6 +37,7 @@ setuptools.setup(
     long_description_content_type='text/markdown',
     packages=setuptools.find_packages('src'),
     package_dir={'': 'src'},
+    package_data={'streamshape': ['../docs/*.md']},
     install_requires=CORE_REQUIRES,
     extras_require=EXTRAS,
     include_package_data=True,
