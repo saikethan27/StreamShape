@@ -7,6 +7,7 @@ Welcome to the Unified LLM Interface package documentation! This package provide
 - **[Quick Start Guide](quickstart.md)** - Get up and running in 5 minutes
 - **[Installation Guide](installation.md)** - Detailed installation instructions
 - **[Usage Guide](usage.md)** - Comprehensive usage examples for all methods
+- **[Output Formats](output-formats.md)** - Complete output structure reference for all methods
 - **[API Reference](api-reference.md)** - Complete API documentation
 - **[Provider Configuration](providers.md)** - Provider-specific setup and configuration
 - **[Examples](examples.md)** - Real-world usage examples

@@ -9,6 +9,7 @@ CORE_REQUIRES = [
     "pydantic>=2.7.0",
     "requests>=2.32.0",
     "python-dotenv>=1.0.1",
+    "litellm>=1.45.0",
 ]
 
 # Provider-specific dependencies
@@ -16,7 +17,6 @@ EXTRAS = {
     "openai": ["openai>=1.52.0"],
     "anthropic": ["anthropic>=0.34.0"],
     "google": ["google-genai>=0.6.0"],
-    "litellm": ["litellm>=1.45.0"],
     "test": ["pytest>=8.3.0", "pytest-cov>=4.1.0", "pytest-asyncio>=0.21.0", "hypothesis>=6.0.0"],
 }
 
@@ -24,8 +24,7 @@ EXTRAS = {
 EXTRAS["all"] = (
     EXTRAS["openai"] + 
     EXTRAS["anthropic"] + 
-    EXTRAS["google"] + 
-    EXTRAS["litellm"]
+    EXTRAS["google"]
 )
 
 setuptools.setup(
@@ -34,7 +33,7 @@ setuptools.setup(
     author="Saikethan",
     description='A unified LLM response parser with streaming support for multiple providers',
     url="https://github.com/saikethan27/StreamShape",
-    long_description=pathlib.Path('README.md').read_text(),
+    long_description=pathlib.Path('README.md').read_text(encoding='utf-8'),
     long_description_content_type='text/markdown',
     packages=setuptools.find_namespace_packages('src'),
     package_dir={'': 'src'},

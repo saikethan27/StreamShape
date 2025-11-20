@@ -7,7 +7,7 @@ from pydantic import BaseModel, Field
 from dotenv import load_dotenv
 
 # Import the unified LLM interface
-from src import OpenAI, Google, OpenAICompatible
+from src.streamshape import OpenRouter, Google, OpenAICompatible
 
 # Load environment variables
 load_dotenv()
@@ -36,7 +36,7 @@ def openrouter_streaming_structured():
         print("❌ OPENROUTER_API_KEY not found in .env file")
         return
     
-    provider = OpenAICompatible(api_key=api_key, base_url=base_url)
+    provider = OpenRouter(api_key=api_key)
     
     # Create the prompt
     system_prompt = "You are a helpful assistant that tells jokes."
