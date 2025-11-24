@@ -551,14 +551,17 @@ result = client.structured_output(
 
 ## Structured Streaming Output Method
 
-Yields validated Pydantic objects as they're generated (streaming).
+Yields validated Pydantic objects as they're generated (streaming) with token usage tracking.
 
-**Note:** This method does NOT follow the `{"data": ..., "raw_chunks": ...}` format. It yields Pydantic objects directly.
-
-### Output Structure (Per Object)
+### Output Structure (Per Chunk)
 
 ```python
-BaseModel  # Yields Pydantic objects directly, one at a time
+{
+    "data": BaseModel or None,  # Validated Pydantic object (None for final chunk)
+    "usage": dict,              # Token usage statistics (populated in final chunk)
+    "finished": bool,           # True for final chunk
+    "raw_chunks": list          # List of raw response chunks (only in final chunk)
+}
 ```
 
 ### Example Usage
@@ -575,50 +578,104 @@ class Task(BaseModel):
     estimated_hours: int
     description: str
 
-# Yields Task objects directly
-for task in client.structured_streaming_output(
+final_usage = None
+
+for result in client.structured_streaming_output(
     model="gpt-4",
     system_prompt="You are a project manager.",
     user_prompt="Create 5 tasks for building a website",
     output_schema=Task
 ):
-    # task is a Task object (not a dict)
+    # Extract data and usage
+    task = result.get("data")
+    usage = result.get("usage")
+    
+    # Store usage data if present
+    if usage:
+        final_usage = usage
+    
+    # Skip final chunk (no data, just usage)
+    if not task:
+        continue
+    
     print(f"📋 {task.title}")
     print(f"   Priority: {task.priority}")
     print(f"   Hours: {task.estimated_hours}")
     print(f"   Description: {task.description}")
     print()
+
+# Display token usage
+if final_usage:
+    print(f"📊 Token Usage:")
+    print(f"   Prompt tokens: {final_usage.get('prompt_tokens')}")
+    print(f"   Completion tokens: {final_usage.get('completion_tokens')}")
+    print(f"   Total tokens: {final_usage.get('total_tokens')}")
 ```
 
-### Complete Example Output (Per Yielded Object)
+### Complete Example Output (Per Yielded Chunk)
 
-**First yielded object:**
+**First chunk (with data):**
 ```json
 {
-    "title": "Design Homepage Layout",
-    "priority": "high",
-    "estimated_hours": 8,
-    "description": "Create wireframes and mockups for the main landing page"
+    "data": {
+        "title": "Design Homepage Layout",
+        "priority": "high",
+        "estimated_hours": 8,
+        "description": "Create wireframes and mockups for the main landing page"
+    },
+    "usage": {},
+    "finished": false
 }
 ```
 
-**Second yielded object:**
+**Second chunk (with data):**
 ```json
 {
-    "title": "Set Up Database Schema",
-    "priority": "high",
-    "estimated_hours": 6,
-    "description": "Design and implement database tables for user data and content"
+    "data": {
+        "title": "Set Up Database Schema",
+        "priority": "high",
+        "estimated_hours": 6,
+        "description": "Design and implement database tables for user data and content"
+    },
+    "usage": {},
+    "finished": false
 }
 ```
 
-**Third yielded object:**
+**Third chunk (with data):**
 ```json
 {
-    "title": "Implement User Authentication",
-    "priority": "high",
-    "estimated_hours": 12,
-    "description": "Build login, registration, and password reset functionality"
+    "data": {
+        "title": "Implement User Authentication",
+        "priority": "high",
+        "estimated_hours": 12,
+        "description": "Build login, registration, and password reset functionality"
+    },
+    "usage": {},
+    "finished": false
+}
+```
+
+**Final chunk (with usage, no data):**
+```json
+{
+    "data": null,
+    "usage": {
+        "prompt_tokens": 45,
+        "completion_tokens": 320,
+        "total_tokens": 365,
+        "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "accepted_prediction_tokens": null,
+            "rejected_prediction_tokens": null
+        },
+        "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": null
+        }
+    },
+    "finished": true,
+    "raw_chunks": [...]
 }
 ```
 
@@ -635,13 +692,26 @@ class Task(BaseModel):
 
 # Collect all tasks
 all_tasks: List[Task] = []
+final_usage = None
 
-for task in client.structured_streaming_output(
+for result in client.structured_streaming_output(
     model="gpt-4",
     system_prompt="You are a project manager.",
     user_prompt="Create 5 tasks for building a website",
     output_schema=Task
 ):
+    # Extract data and usage
+    task = result.get("data")
+    usage = result.get("usage")
+    
+    # Store usage data
+    if usage:
+        final_usage = usage
+    
+    # Skip if no data
+    if not task:
+        continue
+    
     all_tasks.append(task)
     print(f"Received task: {task.title}")
 
@@ -650,6 +720,10 @@ print(f"\nTotal tasks: {len(all_tasks)}")
 # Access collected tasks
 for i, task in enumerate(all_tasks, 1):
     print(f"{i}. {task.title} ({task.priority})")
+
+# Display usage
+if final_usage:
+    print(f"\n📊 Total tokens: {final_usage.get('total_tokens')}")
 ```
 
 ### Real-time Processing Example
@@ -675,26 +749,43 @@ def process_article(article: Article):
     print(f"   ✅ Saved to database")
 
 # Process articles in real-time
-for article in client.structured_streaming_output(
+final_usage = None
+
+for result in client.structured_streaming_output(
     model="gpt-4",
     system_prompt="You are a content writer.",
     user_prompt="Write 3 blog article ideas about AI",
     output_schema=Article
 ):
+    # Extract data and usage
+    article = result.get("data")
+    usage = result.get("usage")
+    
+    # Store usage data
+    if usage:
+        final_usage = usage
+    
+    # Skip if no data
+    if not article:
+        continue
+    
     process_article(article)
+
+if final_usage:
+    print(f"\n📊 Token Usage: {final_usage.get('total_tokens')} tokens")
 ```
 
 ---
 
 ## Comparison Table
 
-| Method | Returns | Data Access | Raw Access | Streaming |
-|--------|---------|-------------|------------|-----------|
-| `generate()` | `dict` | `result["data"]` | `result["raw_chunks"]` | ❌ |
-| `stream()` | `dict` (per chunk) | `chunk["data"]` | `chunk["raw_chunks"]` | ✅ |
-| `tool_call()` | `dict` | `result["data"]` | `result["raw_chunks"]` | ❌ |
-| `structured_output()` | `dict` | `result["data"]` | `result["raw_chunks"]` | ❌ |
-| `structured_streaming_output()` | `BaseModel` | Direct object | ❌ Not available | ✅ |
+| Method | Returns | Data Access | Raw Access | Usage Tracking | Streaming |
+|--------|---------|-------------|------------|----------------|-----------|
+| `generate()` | `dict` | `result["data"]` | `result["raw_chunks"]` | ❌ | ❌ |
+| `stream()` | `dict` (per chunk) | `chunk["data"]` | `chunk["raw_chunks"]` | ❌ | ✅ |
+| `tool_call()` | `dict` | `result["data"]` | `result["raw_chunks"]` | ❌ | ❌ |
+| `structured_output()` | `dict` | `result["data"]` | `result["raw_chunks"]` | ❌ | ❌ |
+| `structured_streaming_output()` | `dict` (per chunk) | `result["data"]` | `result["raw_chunks"]` | ✅ | ✅ |
 
 ---
 
@@ -755,19 +846,28 @@ for obj in result["data"]:  # Now access via ["data"]
 ### Structured Streaming Output Method
 
 ```python
-# No change - still works the same way
+# Old format
 for obj in client.structured_streaming_output(...):
-    print(obj.field)  # Direct Pydantic object
+    print(obj.field)  # Was a direct Pydantic object
+
+# New format
+for result in client.structured_streaming_output(...):
+    obj = result.get("data")  # Now access via ["data"]
+    usage = result.get("usage")  # Token usage available
+    
+    if obj:  # Skip final chunk with just usage
+        print(obj.field)
 ```
 
 ---
 
 ## Benefits of New Format
 
-1. **Consistency**: All non-streaming methods use the same structure
-2. **Debugging**: Access raw API responses when needed
-3. **Flexibility**: Can inspect metadata without parsing raw responses
-4. **Future-proof**: Easy to add new fields without breaking changes
+1. **Consistency**: All methods now use the same dictionary structure
+2. **Token Tracking**: `structured_streaming_output()` now includes usage data for cost monitoring
+3. **Debugging**: Access raw API responses when needed
+4. **Flexibility**: Can inspect metadata without parsing raw responses
+5. **Future-proof**: Easy to add new fields without breaking changes
 
 ## See Also
 

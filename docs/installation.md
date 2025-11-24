@@ -263,10 +263,10 @@ PermissionError: [Errno 13] Permission denied
 **Solution:**
 ```bash
 # Install for current user only
-pip install --user unified-llm-interface
+pip install --user streamshape
 
 # Or use sudo (Linux/Mac)
-sudo pip install unified-llm-interface
+sudo pip install streamshape
 ```
 
 ## Development Installation

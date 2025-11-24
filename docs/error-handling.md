@@ -20,7 +20,7 @@ UnifiedLLMError (base)
 Base exception for all package errors.
 
 ```python
-from src.exceptions import UnifiedLLMError
+from streamshape.exceptions import UnifiedLLMError
 
 try:
     response = client.generate(...)
@@ -33,7 +33,7 @@ except UnifiedLLMError as e:
 Raised when provider configuration is invalid.
 
 ```python
-from src.exceptions import ConfigurationError
+from streamshape.exceptions import ConfigurationError
 
 try:
     client = OpenAICompatible(api_key="key")  # Missing base_url
@@ -51,7 +51,7 @@ except ConfigurationError as e:
 Raised when input validation fails.
 
 ```python
-from src.exceptions import ValidationError
+from streamshape.exceptions import ValidationError
 
 try:
     response = client.generate(
@@ -74,7 +74,7 @@ except ValidationError as e:
 Raised when the LLM API call fails.
 
 ```python
-from src.exceptions import APIError
+from streamshape.exceptions import APIError
 
 try:
     response = client.generate(...)
@@ -100,7 +100,7 @@ except APIError as e:
 Raised when network communication fails.
 
 ```python
-from src.exceptions import NetworkError
+from streamshape.exceptions import NetworkError
 
 try:
     response = client.generate(...)
@@ -119,7 +119,7 @@ except NetworkError as e:
 Raised when response parsing fails (structured output only).
 
 ```python
-from src.exceptions import ParsingError
+from streamshape.exceptions import ParsingError
 
 try:
     results = client.structured_output(...)
@@ -151,7 +151,7 @@ except Exception as e:
 ### Specific Exception Handling
 
 ```python
-from src.exceptions import (
+from streamshape.exceptions import (
     ValidationError,
     APIError,
     NetworkError

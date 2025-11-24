@@ -569,7 +569,7 @@ print(f"Products: {', '.join(company.key_products)}")
 
 ## Method 5: Structured Streaming Output
 
-Get validated Pydantic objects as they're generated (streaming).
+Get validated Pydantic objects as they're generated (streaming) with token usage tracking.
 
 ### Basic Usage
 
@@ -581,13 +581,31 @@ class Task(BaseModel):
     priority: str
     estimated_hours: int
 
-for task in client.structured_streaming_output(
+final_usage = None
+
+for result in client.structured_streaming_output(
     model="gpt-4",
     system_prompt="You are a project manager.",
     user_prompt="Create 10 tasks for building a mobile app",
     output_schema=Task
 ):
+    # Extract data and usage
+    task = result.get("data")
+    usage = result.get("usage")
+    
+    # Store usage data if present
+    if usage:
+        final_usage = usage
+    
+    # Skip final chunk (no data, just usage)
+    if not task:
+        continue
+    
     print(f"📋 {task.title} (Priority: {task.priority}, {task.estimated_hours}h)")
+
+# Display token usage
+if final_usage:
+    print(f"\n📊 Tokens used: {final_usage.get('total_tokens')}")
 ```
 
 ### With Progress Updates
@@ -604,14 +622,27 @@ class Article(BaseModel):
 
 print("Generating articles...")
 count = 0
+final_usage = None
 
-for article in client.structured_streaming_output(
+for result in client.structured_streaming_output(
     model="gpt-4",
     system_prompt="You are a content writer.",
     user_prompt="Write 5 blog article ideas about AI",
     output_schema=Article,
     temperature=0.8
 ):
+    # Extract data and usage
+    article = result.get("data")
+    usage = result.get("usage")
+    
+    # Store usage data
+    if usage:
+        final_usage = usage
+    
+    # Skip if no data
+    if not article:
+        continue
+    
     count += 1
     print(f"\n[{count}] {article.title}")
     print(f"    Category: {article.category}")
@@ -619,6 +650,11 @@ for article in client.structured_streaming_output(
     print(f"    Words: {article.word_count}")
 
 print(f"\n✅ Generated {count} articles!")
+if final_usage:
+    print(f"📊 Token Usage:")
+    print(f"   - Prompt tokens: {final_usage.get('prompt_tokens')}")
+    print(f"   - Completion tokens: {final_usage.get('completion_tokens')}")
+    print(f"   - Total tokens: {final_usage.get('total_tokens')}")
 ```
 
 ### Use Cases
@@ -656,16 +692,32 @@ def process_lead(lead: SalesLead):
     time.sleep(0.5)  # Simulate processing
 
 print("Generating and processing leads in real-time...\n")
+final_usage = None
 
-for lead in client.structured_streaming_output(
+for result in client.structured_streaming_output(
     model="gpt-4",
     system_prompt="You are a sales lead generator.",
     user_prompt="Generate 5 B2B sales leads for a SaaS company",
     output_schema=SalesLead
 ):
+    # Extract data and usage
+    lead = result.get("data")
+    usage = result.get("usage")
+    
+    # Store usage data
+    if usage:
+        final_usage = usage
+    
+    # Skip if no data
+    if not lead:
+        continue
+    
     print(f"📊 New lead: {lead.company_name} ({lead.industry})")
     process_lead(lead)
     print()
+
+if final_usage:
+    print(f"📊 Total tokens used: {final_usage.get('total_tokens')}")
 ```
 
 ---
@@ -675,7 +727,7 @@ for lead in client.structured_streaming_output(
 ### Error Handling
 
 ```python
-from src.exceptions import (
+from streamshape.exceptions import (
     ValidationError,
     APIError,
     NetworkError

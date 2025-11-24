@@ -8,7 +8,7 @@ from pydantic import BaseModel, Field
 from dotenv import load_dotenv
 
 # Add src to path to use local development version
-# sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
 # Import the unified LLM interface
 from streamshape import OpenRouter, Google, OpenAICompatible
@@ -17,14 +17,13 @@ from streamshape import OpenRouter, Google, OpenAICompatible
 load_dotenv()
 
 class PunchlinesSchema(BaseModel):
-    line: str = Field(description="The punchline of the joke")
     item: str = Field(description="item name punchline comes under")
 
 # Define Pydantic model for joke response
 class Joke(BaseModel):
     """Joke to tell user."""
     setup: str = Field(description="The setup of the joke")
-    punchlines: list[PunchlinesSchema] = Field(description="List of punchlines for the joke")
+    punchlines: list[PunchlinesSchema] = Field(description="List of items for the joke")
     rating: Optional[int] = Field(default=None, description="How funny the joke is, from 1 to 10")
 
 
@@ -47,7 +46,7 @@ def openrouter_streaming_structured():
     
     # Create the prompt
     system_prompt = "You are a helpful assistant that tells jokes."
-    user_prompt = "Give me 5 jokes on Graph Theory and 10 on python "
+    user_prompt = "Give me 5 jokes on Graph Theory and 2 on python indivudial"
     
     print(f"\n📝 Model: {model}")
     print(f"📝 Prompt: {user_prompt}")
@@ -56,26 +55,44 @@ def openrouter_streaming_structured():
     try:
         # Stream structured output
         joke_count = 0
+        final_usage = None
         
-        for joke in provider.structured_streaming_output(
+        for result in provider.structured_streaming_output(
             model=model,
             system_prompt=system_prompt,
             user_prompt=user_prompt,
             output_schema=Joke,
             temperature=0.7
         ):
+            # Extract data and usage from result dictionary
+            joke = result.get('data')
+            usage = result.get('usage')
+            
+            # Store usage data if present
+            if usage:
+                final_usage = usage
+            
+            # Skip if no data (final chunk with just usage)
+            if not joke:
+                continue
+            
             joke_count += 1
             print(f"Joke #{joke_count}:")
             print(f"  Setup: {joke.setup}")
             print(f"  Punchlines:")
             for punchline in joke.punchlines:
-                print(f"    - {punchline.line} (under: {punchline.item})")
+                print(f"    - (under: {punchline.item})")
             if joke.rating:
                 print(f"  Rating: {joke.rating}/10")
             print()
         
         print(f"{'='*80}")
         print(f"✅ Successfully received {joke_count} jokes!")
+        if final_usage:
+            print(f"📊 Token Usage:")
+            print(f"   - Prompt tokens: {final_usage.get('prompt_tokens', 'N/A')}")
+            print(f"   - Completion tokens: {final_usage.get('completion_tokens', 'N/A')}")
+            print(f"   - Total tokens: {final_usage.get('total_tokens', 'N/A')}")
         print(f"{'='*80}\n")
         
     except Exception as e:
@@ -111,26 +128,44 @@ def google_streaming_structured():
     try:
         # Stream structured output
         joke_count = 0
+        final_usage = None
         
-        for joke in provider.structured_streaming_output(
+        for result in provider.structured_streaming_output(
             model=model,
             system_prompt=system_prompt,
             user_prompt=user_prompt,
             output_schema=Joke,
             temperature=0.7
         ):
+            # Extract data and usage from result dictionary
+            joke = result.get('data')
+            usage = result.get('usage')
+            
+            # Store usage data if present
+            if usage:
+                final_usage = usage
+            
+            # Skip if no data (final chunk with just usage)
+            if not joke:
+                continue
+            
             joke_count += 1
             print(f"Joke #{joke_count}:")
             print(f"  Setup: {joke.setup}")
             print(f"  Punchlines:")
             for punchline in joke.punchlines:
-                print(f"    - {punchline.line} (under: {punchline.item})")
+                print(f"    - (under: {punchline.item})")
             if joke.rating:
                 print(f"  Rating: {joke.rating}/10")
             print()
         
         print(f"{'='*80}")
         print(f"✅ Successfully received {joke_count} jokes!")
+        if final_usage:
+            print(f"📊 Token Usage:")
+            print(f"   - Prompt tokens: {final_usage.get('prompt_tokens', 'N/A')}")
+            print(f"   - Completion tokens: {final_usage.get('completion_tokens', 'N/A')}")
+            print(f"   - Total tokens: {final_usage.get('total_tokens', 'N/A')}")
         print(f"{'='*80}\n")
         
     except Exception as e:
@@ -167,26 +202,44 @@ def openai_compatible_streaming_structured():
     try:
         # Stream structured output
         joke_count = 0
+        final_usage = None
         
-        for joke in provider.structured_streaming_output(
+        for result in provider.structured_streaming_output(
             model=model,
             system_prompt=system_prompt,
             user_prompt=user_prompt,
             output_schema=Joke,
             temperature=0.7
         ):
+            # Extract data and usage from result dictionary
+            joke = result.get('data')
+            usage = result.get('usage')
+            
+            # Store usage data if present
+            if usage:
+                final_usage = usage
+            
+            # Skip if no data (final chunk with just usage)
+            if not joke:
+                continue
+            
             joke_count += 1
             print(f"Joke #{joke_count}:")
             print(f"  Setup: {joke.setup}")
             print(f"  Punchlines:")
             for punchline in joke.punchlines:
-                print(f"    - {punchline.line} (under: {punchline.item})")
+                print(f"    - (under: {punchline.item})")
             if joke.rating:
                 print(f"  Rating: {joke.rating}/10")
             print()
         
         print(f"{'='*80}")
         print(f"✅ Successfully received {joke_count} jokes!")
+        if final_usage:
+            print(f"📊 Token Usage:")
+            print(f"   - Prompt tokens: {final_usage.get('prompt_tokens', 'N/A')}")
+            print(f"   - Completion tokens: {final_usage.get('completion_tokens', 'N/A')}")
+            print(f"   - Total tokens: {final_usage.get('total_tokens', 'N/A')}")
         print(f"{'='*80}\n")
         
     except Exception as e:
@@ -197,10 +250,10 @@ def openai_compatible_streaming_structured():
 
 if __name__ == "__main__":
     # Test with OpenRouter (using OpenAI-compatible endpoint)
-    openrouter_streaming_structured()
+    # openrouter_streaming_structured()
     
     # Uncomment to test with Google Gemini
-    # google_streaming_structured()
+    google_streaming_structured()
 
     # Uncomment to test with another OpenAI-compatible endpoint
     # openai_compatible_streaming_structured()

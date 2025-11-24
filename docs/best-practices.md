@@ -236,7 +236,7 @@ def generate_text(prompt):
 ### 2. Handle Errors Gracefully
 
 ```python
-from src.exceptions import APIError, NetworkError
+from streamshape.exceptions import APIError, NetworkError
 
 def safe_generate(prompt, fallback="Unable to generate response"):
     try:

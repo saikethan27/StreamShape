@@ -13,6 +13,7 @@ Welcome to the StreamShape package documentation! This package provides a simple
 - **[Examples](examples.md)** - Real-world usage examples
 - **[Error Handling](error-handling.md)** - Understanding and handling errors
 - **[Best Practices](best-practices.md)** - Tips and recommendations
+- **[Migration Guide](MIGRATION_STREAMING_USAGE.md)** - Migrating to new streaming format with usage tracking
 
 ## What is StreamShape?
 
@@ -25,7 +26,7 @@ StreamShape is a Python package that provides a simple, consistent API for worki
 - Streaming text
 - Function calling (tool use)
 - Structured output (validated Pydantic objects)
-- Streaming structured output
+- Streaming structured output with token usage tracking
 
 🔌 **6 Supported Providers**
 - OpenAI
