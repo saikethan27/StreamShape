@@ -2,7 +2,7 @@ import setuptools
 import pathlib
 
 PKG_NAME = "streamshape"
-VERSION = "0.1.2"
+VERSION = "0.1.3"
 
 # Core dependencies (minimal install)
 CORE_REQUIRES = [
