@@ -119,7 +119,7 @@ def google_streaming_structured():
     
     # Create the prompt
     system_prompt = "You are a helpful assistant that tells jokes."
-    user_prompt = "Give me 3 jokes on Computer Science"
+    user_prompt = "Give me  30 jokes on Computer Science"
     
     print(f"\n📝 Model: {model}")
     print(f"📝 Prompt: {user_prompt}")
